@@ -34,8 +34,29 @@ never assume it, and pull the matching ADP/projection feed to match.
    floor is worth a small reach because the floor is real points — or (b) stream:
    draft two mid/late QBs on **offset bye weeks** and start the better matchup each
    week. Never pay a mid-round price for a pocket passer with no rushing upside.
-3. **TE:** take one from your tier before the tier empties, then stop. If you miss
-   the elite tier, wait and take two dart throws late — don't reach a round early.
+3. **TE — two valid paths, pick one and commit:**
+   - **(a) Elite TE early — take him when ALL FOUR are true.** This overrides a
+     "WR/RB here" row in the plan. Take an elite TE in the early-middle rounds
+     only when:
+     1. **Elite tier** — a genuine top-1/2 TE with a wide positional-scoring
+        edge (a weekly advantage at the league's thinnest starting slot), *and*
+     2. **He fell to ~his ADP or below** — you are paying market price, not
+        reaching. (Within a pick or two of his Sleeper ADP counts; a real
+        discount is a green light.) *and*
+     3. **A scarcity cliff sits right behind him** — the next TE tier is many
+        picks away, so passing means a big drop in quality, *and*
+     4. **Your premium anchors are already secured** — you have your RB1 and
+        WR1 (or equivalent core), so the depth cost is affordable.
+     When all four line up, take the TE even though the row says a different
+     position — an elite TE at a cliff is a season-long structural edge.
+     *(Worked example: a manager took McBride at pick 26 — his ADP was ~28, the
+     next TE went at 52, and he already had his R1 RB + R2 WR. Textbook (a).)*
+   - **(b) Wait and stream.** If any of the four is missing, don't force it: take
+     one from your TE tier before that tier empties, then stop — or punt and grab
+     two dart throws late.
+   - **What to actually avoid** is reaching for a *middling* TE in the dead zone
+     (a name with no positional edge, a round early, just to "have your TE").
+     That's the trap — not taking an elite one early.
 4. **Rounds 8–12: upside and value.** Every pick now is a bench slot, and a bench
    player only helps if he breaks into your lineup or becomes a trade chip. **Floor
    does neither — draft upside, and value only when the room hands it to you.**
