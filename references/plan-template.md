@@ -1,7 +1,7 @@
-# <SEASON> Draft Plan — <TEAM NAME> — <SCORING>, <N>-team, Slot <S>
+# [SEASON] Draft Plan — [TEAM NAME] — [SCORING], [N]-team, Slot [S]
 
-**Draft: <date/time> · <clock>s clock · Sleeper (<league name>)**
-Format: <roster_positions, e.g. 1 QB / 2 RB / 2 WR / 1 TE / 1 FLEX / 1 K / 1 DEF / 6 bench> — <rounds> rounds.
+**Draft: [date/time] · [clock]s clock · Sleeper ([league name])**
+Format: [roster_positions, e.g. 1 QB / 2 RB / 2 WR / 1 TE / 1 FLEX / 1 K / 1 DEF / 6 bench] — [rounds] rounds.
 **This file is the single source of truth.** Where the skill's generic rules
 conflict with this file, THIS FILE WINS.
 
@@ -12,8 +12,8 @@ Rule of thumb: SLP ADP ≥ your pick + 8 → probably there · ±5 → coin flip
 
 ## ⏱️ CLOCK CARD — the only thing to read on the clock
 
-1. **Your picks this season (slot <S>):** <list of pick numbers per round>.
-   Back-to-back turns: <which round pairs>.
+1. **Your picks this season (slot [S]):** [list of pick numbers per round].
+   Back-to-back turns: [which round pairs].
 2. Rows below are already in take-order for each turn. Take the first name still
    available. "(hurt)" = not a lock for Week 1 — already priced in, never move up.
 3. Before each turn, put the next round's first 4 names in Sleeper's queue in case
@@ -50,10 +50,10 @@ Rule of thumb: SLP ADP ≥ your pick + 8 → probably there · ±5 → coin flip
 
 ## Pre-made decisions
 
-- **Elite QB target(s):** <name(s) + the round/pick it's worth reaching to>.
-- **When to take TE:** <round> from <tier list>. Never earlier.
-- **Handcuff plan:** <one insurance handcuff for your R1 RB, at pick __ — or "none, spend on ceiling RB">.
-- **Never draft:** <suspended / injured / exempt-list players>.
+- **Elite QB target(s):** [name(s) + the round/pick it's worth reaching to].
+- **When to take TE:** [round] from [tier list]. Never earlier.
+- **Handcuff plan:** [one insurance handcuff for your R1 RB, at pick __ — or "none, spend on ceiling RB"].
+- **Never draft:** [suspended / injured / exempt-list players].
 
 ## Tiers (by position)
 
