@@ -60,10 +60,12 @@ never assume it, and pull the matching ADP/projection feed to match.
 4. **Rounds 8–12: upside and value.** Every pick now is a bench slot, and a bench
    player only helps if he breaks into your lineup or becomes a trade chip. **Floor
    does neither — draft upside, and value only when the room hands it to you.**
-5. **Handcuff:** at most one, late, and only insurance for *your own* early RB
-   stud. Don't draft other managers' handcuffs. If your stud has no viable
-   handcuff (backup is a special-teamer or on IR), spend the pick on a ceiling RB
-   instead.
+5. **Late-round RBs: ceiling first.** Use these picks on backs with a path to a
+   real role — upside that can break into your lineup or become a trade chip.
+   Handcuffing is a minor, situational move: worth *one* pick only as insurance
+   for your own early RB stud, and only if that backup would truly start if the
+   stud went down. If he wouldn't (special-teamer, buried, on IR), take a ceiling
+   RB instead. Never draft another manager's handcuff.
 6. **K and DEF: last two picks.** Stream both in-season off free agency.
 
 ## Byes

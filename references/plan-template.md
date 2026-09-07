@@ -54,7 +54,8 @@ Rule of thumb: SLP ADP ≥ your pick + 8 → probably there · ±5 → coin flip
 - **When to take TE:** default target [round] from [tier list]. **Elite-TE
   exception:** grab a top-1/2 TE early if he falls to ~his ADP, a scarcity cliff
   sits right behind him, and your RB1/WR1 are already locked (see strategy.md).
-- **Handcuff plan:** [one insurance handcuff for your R1 RB, at pick __ — or "none, spend on ceiling RB"].
+- **Late-round RB plan:** ceiling RBs with a path to a role. (Optional: one
+  handcuff for your R1 RB only if his backup would actually start — otherwise skip it.)
 - **Never draft:** [suspended / injured / exempt-list players].
 
 ## Tiers (by position)

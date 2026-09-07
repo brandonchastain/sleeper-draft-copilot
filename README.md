@@ -53,7 +53,7 @@ Then restart Claude Code (or start a new session) so it picks up the skill.
 > Set up my Sleeper draft. League: https://sleeper.com/leagues/XXXXXXXX  — my username is yourname.
 
 It walks setup and builds your plan file. Review the pre-made decisions
-(elite QB target, when to take TE, handcuff plan) and tweak to taste.
+(elite QB target, when to take TE, late-round RB plan) and tweak to taste.
 
 **On draft day, when you're on the clock:**
 
@@ -77,6 +77,7 @@ for you (you stay in control in the Sleeper app).
 - [`references/strategy.md`](references/strategy.md) — the half-PPR strategy playbook.
 - [`references/data-sources.md`](references/data-sources.md) — the free data endpoints.
 - [`references/plan-template.md`](references/plan-template.md) — the blank tier sheet.
+- [`references/in-season-template.md`](references/in-season-template.md) — the post-draft in-season plan (roster, waivers, weekly routine).
 
 ## License
 

@@ -26,13 +26,13 @@ and to build their plan file.
 
 Each league/season gets one plan file, e.g. `draft_plan_<season>.md` in the
 user's working directory. **That file is the single source of truth** — the
-turn-by-turn plan, pre-made decisions, tiers, injury/suspension flags, the
-handcuff map, and bye rules. Read it in full before the first recommendation.
+turn-by-turn plan, pre-made decisions, tiers, injury/suspension flags, and bye
+rules. Read it in full before the first recommendation.
 Where anything in this skill and the plan disagree, **the plan wins**. This
 skill only says how to read the board, how to build the plan, and how to talk.
 
 `references/strategy.md` is the generic half-PPR strategy playbook (RB/WR
-priority, QB streaming, TE tiers, handcuffs, byes, VALUE/REACH). Use it to
+priority, QB streaming, TE tiers, byes, VALUE/REACH). Use it to
 *build* a plan when none exists, and as background — don't take round-by-round
 orders from it once a plan file exists.
 
@@ -69,7 +69,7 @@ username, then:
 5. **Build the plan file** if one doesn't exist for this season: pull ADP and
    projections from `references/data-sources.md`, follow the method in
    `references/strategy.md`, and fill in `references/plan-template.md`. Confirm
-   the big pre-made decisions (elite QB target, when to take TE, handcuff plan)
+   the big pre-made decisions (elite QB target, when to take TE, late-round RB plan)
    with the user before draft day.
 
 ## Snake turn math (works for any slot)
@@ -134,27 +134,59 @@ plan file's specific calls always win.
   RBs and yardage/TD. **Full PPR: receptions are a point each — push high-catch
   WRs, pass-catching RBs, and target-hog TEs up, and fade low-catch TD-dependent
   players.** Re-pull the correct ADP feed if scoring changes.
-- **RB/WR first.** The best chances to land startable RB and WR are rounds 1–7.
-  Don't spend an early pick on QB/TE/K/DEF unless the plan says so.
+- **RB/WR first — but not RB/WR *only*.** Your best chances to land startable RB
+  and WR are rounds 1–7, so that's the default. The two sanctioned early
+  exceptions are an **elite QB with a rushing floor at a discount** and an
+  **elite TE that falls at a scarcity cliff** (both below) — taking those inside
+  the RB/WR window is correct, not a violation. Everything else (a second TE, a
+  pocket-passer QB, any K/DEF) stays out of the early rounds.
 - **QB:** in a 1-QB league, either land one elite target at a real discount or
   stream two mid/late QBs on offset bye weeks. Never pay a mid-round price for a
   pocket passer with no rushing floor. (See the streaming path in the plan.)
 - **TE:** take one from your tier before it empties, then stop. Don't reach a
   round early for a name; don't chase a second TE.
-- **Handcuffs:** at most one insurance handcuff, and only for your own early-round
-  RB stud, late. Don't draft other managers' handcuffs.
+- **Late RBs: prefer ceiling over handcuffs.** Spend late-round RB picks on backs
+  with a path to a real role (upside that can crack your lineup or become a trade
+  chip). A pure handcuff is only worth it as insurance for your *own* early RB
+  stud, and only if that backup would actually start if the stud went down — if
+  the backup is a special-teamer or on IR, take a ceiling RB instead. Never draft
+  another manager's handcuff.
 - **Byes:** ignore until the middle rounds; from then on use bye week only as a
   tiebreaker between close options, never to jump tiers.
 - **VALUE / REACH:** a player flagged VALUE (falling below expert rank) wins ties
   inside a tier; a REACH (going well above rank in this room) is never taken at
   the room's price.
-- **K and DEF:** last two picks only. Stream both in-season.
+- **K and DEF:** the last couple of rounds, never earlier — and if a good upside
+  RB/WR dart is still on the board, it's fine to take it and grab the DEF or K a
+  pick later. Stream both in-season.
 
-## After the draft
+## After the draft — generate the in-season plan
 
-Save the final roster and an in-season routine to the user's working directory
-(waiver strategy, weekly lineup routine, bye clusters, injury watch list) so next
-season's setup is faster. See `references/strategy.md` for the in-season template.
+As soon as the draft finishes (or when the user asks), build an in-season plan
+file, e.g. `in_season_plan_<season>.md`, from
+`references/in-season-template.md`. This is the part that actually wins the
+league — the draft is a fraction of it. Steps:
+
+1. **Pull the final roster** from `/draft/<DRAFT_ID>/picks` filtered to the
+   user's `draft_slot`, and label each player's **bye week** (from the Sleeper
+   player master, `/players/nfl`, or the projection feed).
+2. **Read the league's transaction rules** from
+   `https://api.sleeper.app/v1/league/<LEAGUE_ID>` → `settings`: waiver type
+   (`waiver_type`/`waiver_budget` → **FAAB** vs **rolling priority**), `waiver_day`
+   / when claims clear, and `trade_deadline`. Write the routine to match the
+   actual format — don't assume FAAB.
+3. **Find bye clusters** — weeks where 2+ of the user's starters are off. Flag the
+   worst one so they avoid stacking a third that week.
+4. **Build the watch list** — injuries to monitor Week 1, committee backfields,
+   any IR stash to claim on activation, and boom-bust players who are trade-chip
+   candidates if they pop early.
+5. **Set the QB plan** — if they landed a set-and-forth QB, note the one bye week
+   to stream; if they're streaming two QBs, note the offset byes.
+6. Fill in the rest of `references/in-season-template.md` (waiver strategy,
+   weekly routine, sell-high window) and save it to the working directory.
+
+Keep this file so next season's setup — and mid-season decisions — are faster.
+`references/strategy.md` has the reasoning behind each routine step.
 
 ## Notes
 
