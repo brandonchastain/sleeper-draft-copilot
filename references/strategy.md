@@ -3,16 +3,27 @@
 Use this to *build* a plan file when none exists, and as background. Once a plan
 file exists, take round-by-round orders from the plan, not from here.
 
-## Scoring: what half-PPR rewards
+## Scoring: confirm it first, then adjust the whole board
 
-- **Full PPR:** receptions are king (a point per catch) — high-volume slot WRs
-  and pass-catching RBs rise.
-- **Half-PPR:** receptions still help, but yardage and TDs matter more, and
-  workhorse RBs gain relative value. Prioritize target/carry *volume* and
-  goal-line/red-zone role over pure catch count.
-- **Standard:** RBs and TD-dependent players rise further; de-emphasize catches.
+**Before ranking anyone, confirm the league's scoring with the user** — ask
+"full PPR, half PPR, or standard?" and check it against `scoring_settings.rec`
+(1.0 = full, 0.5 = half, 0 = standard). Scoring reshapes the entire draft, so
+never assume it, and pull the matching ADP/projection feed to match.
 
-Always confirm the league's `scoring_settings.rec` before ranking.
+- **Full PPR (`rec` = 1.0):** receptions are king — a point per catch.
+  - **Push up:** high-volume slot/possession WRs, pass-catching / third-down RBs
+    (a back with 60+ catches can out-score a bigger-name early-down grinder),
+    and target-hog TEs (a clear top TE is worth reaching for a round earlier
+    than in half-PPR).
+  - **Fade:** TD-dependent, low-catch WRs and committee/early-down-only RBs whose
+    value is all yardage and touchdowns.
+  - **Practical effect:** WR depth is deeper and more valuable, so it's easier to
+    wait on RB2/RB3 and load WRs; a receiving RB is a legit RB1/2, not just a flex.
+- **Half PPR (`rec` = 0.5):** receptions still help, but yardage and TDs matter
+  more, and workhorse RBs gain relative value. Prioritize target/carry *volume*
+  and goal-line/red-zone role over pure catch count.
+- **Standard (`rec` = 0):** RBs and TD-dependent players rise further;
+  de-emphasize catches; pure slot WRs drop.
 
 ## Core shape of a good draft
 

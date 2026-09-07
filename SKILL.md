@@ -50,7 +50,15 @@ username, then:
 2. **Read league settings:**
    `https://api.sleeper.app/v1/league/<LEAGUE_ID>` → `roster_positions` (the
    exact starting lineup + bench), `settings.num_teams`, and `scoring_settings`
-   (`rec` = 1.0 full PPR, 0.5 half PPR, 0 standard). Confirm scoring with the user.
+   (`rec` = 1.0 full PPR, 0.5 half PPR, 0 standard).
+   **Always confirm scoring out loud with the user before building anything** —
+   ask directly: *"Is this a full-PPR, half-PPR, or standard league?"* Read the
+   `rec` value back to them and get a yes; scoring changes the entire board, so
+   never assume it. Whatever they confirm, pull the matching ADP/projection feed
+   (the `ppr` / `half-ppr` / `standard` variants in `references/data-sources.md`)
+   and apply the scoring adjustments in `references/strategy.md`. In **full PPR**
+   especially, bump high-volume pass-catchers (slot WRs, receiving RBs, target-
+   hog TEs) up and fade TD-dependent, low-catch players.
 3. **Find the user's slot:**
    `https://api.sleeper.app/v1/user/<USERNAME>` → `user_id`, then
    `https://api.sleeper.app/v1/draft/<DRAFT_ID>` → `draft_order` maps `user_id` →
@@ -122,6 +130,10 @@ mechanism — no login, no browser, no websocket needed.
 These are sane defaults for building a plan and for filling gaps live. The
 plan file's specific calls always win.
 
+- **Match the scoring** (confirmed at setup). Half-PPR / standard: favor volume
+  RBs and yardage/TD. **Full PPR: receptions are a point each — push high-catch
+  WRs, pass-catching RBs, and target-hog TEs up, and fade low-catch TD-dependent
+  players.** Re-pull the correct ADP feed if scoring changes.
 - **RB/WR first.** The best chances to land startable RB and WR are rounds 1–7.
   Don't spend an early pick on QB/TE/K/DEF unless the plan says so.
 - **QB:** in a 1-QB league, either land one elite target at a real discount or
